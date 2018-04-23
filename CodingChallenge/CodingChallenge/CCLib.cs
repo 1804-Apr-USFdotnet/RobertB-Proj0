@@ -34,10 +34,9 @@ namespace CodingChallenge
             //}
             
             size = copyString.Length;
-            Console.WriteLine(size/2);
             for (int k = 0; k <= (size / 2); k++)
             {
-                if (copyString[k] != copyString[size - k])
+                if (copyString[k] != copyString[size - k-1])
                     return false;
             }
             return true;
