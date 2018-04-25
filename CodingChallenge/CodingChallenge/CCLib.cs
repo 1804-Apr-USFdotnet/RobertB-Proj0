@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace CodingChallenge
 {
-    class CCLib
+    public class CCLib
     {
         bool test=true;
         int size;

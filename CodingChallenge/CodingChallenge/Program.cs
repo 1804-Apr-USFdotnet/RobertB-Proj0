@@ -12,7 +12,7 @@ namespace CodingChallenge
         {
             string test;
             CCLib check = new CCLib();
-            Console.WriteLine("Please enter a phraes: ");
+            Console.WriteLine("Please enter a phrase: ");
             test = Console.ReadLine();
             if (check.Check(test))
                 Console.WriteLine(test + " is a palindrome.");

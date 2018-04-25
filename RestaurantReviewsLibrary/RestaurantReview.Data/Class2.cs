@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantReviews.Library
+namespace RestaurantReview.Data
 {
-    class Program
+    class Class2
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
