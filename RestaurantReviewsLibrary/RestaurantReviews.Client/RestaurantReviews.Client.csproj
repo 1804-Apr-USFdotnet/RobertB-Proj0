@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4CADFD3E-C639-4656-B4D5-DF68C4785D8C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>RestaurantReviewsClient</RootNamespace>
-    <AssemblyName>RestaurantReviewsClient</AssemblyName>
+    <RootNamespace>RestaurantReviews.Client</RootNamespace>
+    <AssemblyName>RestaurantReviews.Client</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,6 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantReviews.Library\RestaurantReviews.Library.csproj">
+      <Project>{d115ea26-8a9c-424c-b7a7-4b518f15c6ff}</Project>
+      <Name>RestaurantReviews.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

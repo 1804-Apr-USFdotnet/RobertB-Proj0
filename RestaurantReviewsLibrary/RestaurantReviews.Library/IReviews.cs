@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using 
+
 namespace RestaurantReviews.Library
 {
-    class Search
+    interface IReviews
     {
-        string phrase { get; set; }
-        //for
-        //ArrayList <Restaurant>;
+        string Reviewer { get; set; }
+        string Comment { get; set; }
+        double Rating { get; set; }
     }
 }

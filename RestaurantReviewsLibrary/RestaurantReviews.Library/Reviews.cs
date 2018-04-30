@@ -4,22 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantReviewsLibrary
+namespace RestaurantReviews.Library
 {
-    class Reviews
+    public class Reviews : IReviews
     { 
         public string Reviewer { get; set; }
         public string Comment { get; set; }
         public double Rating { get; set; }
-
+        public int RestaurantId { get; set; }
         public override string ToString()
         {
-            return $"Rating: {Rating}\n {Reviewer}: {Rating}";          
+            return $"Rating: {Rating}\n {Reviewer}: {Rating}\n";          
         }
-    }
-
-    class ReviewsList : Reviews
-    {
-        List<Reviews> reviewList = new List<Reviews>();
     }
 }
