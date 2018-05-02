@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 namespace RestaurantReviews.Library
 {
-    public class Serializer
+    public static class Serializer
     {
         static string location = Directory.GetCurrentDirectory() + @"\restaurantList.json";
         static string loc2 = Directory.GetCurrentDirectory() + @"\reviewList.json";

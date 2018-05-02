@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DALAccessor.cs" />
     <Compile Include="IRestaurant.cs" />
     <Compile Include="IReviews.cs" />
     <Compile Include="MethodCalls.cs" />

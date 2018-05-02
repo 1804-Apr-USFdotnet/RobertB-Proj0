@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantReviews.Library
 {
-    class Search
+    public static class Search
     {
         public static List<Restaurant> Lookup(List<Restaurant> restaurants, string sub)
         {

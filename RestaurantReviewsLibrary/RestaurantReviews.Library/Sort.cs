@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantReviews.Library
 {
-    class Sort
+    public class Sort
     {
         public static List<Restaurant> AlphabeticalSort(List<Restaurant> rest)
         {

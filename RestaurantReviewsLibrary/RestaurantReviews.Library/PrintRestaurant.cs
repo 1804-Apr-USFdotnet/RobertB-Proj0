@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantReviews.Library
 {
-    class PrintRestaurant
+    public static class PrintRestaurant
     {
         public static List<Restaurant> PrintRestaurantByName(List<Restaurant> rest, string text)
         {

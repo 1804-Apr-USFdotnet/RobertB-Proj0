@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RestaurantReviews.Library;
-
+using NLog;
 namespace RestaurantReviews.Client
 {
     class Program
@@ -15,6 +15,8 @@ namespace RestaurantReviews.Client
             bool execute = true;
             string restName;
             MethodCalls.SetLibRest();
+            Logger log = LogManager.GetCurrentClassLogger();
+            log.Info("Starting application");
             while (execute)
             {
                 Console.WriteLine("Press the number corresponding to the option you want:");
@@ -112,7 +114,8 @@ namespace RestaurantReviews.Client
                         }
                     case 6 :
                         {
-                            execute=false;
+                            log.Info(x);
+                            execute =false;
                             break;
                         }
                 }
