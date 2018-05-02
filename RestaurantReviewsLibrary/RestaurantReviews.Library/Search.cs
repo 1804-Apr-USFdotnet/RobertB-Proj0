@@ -9,13 +9,15 @@ namespace RestaurantReviews.Library
 {
     class Search
     {
-        public static void Lookup(List<Restaurant> restaurants, string sub)
+        public static List<Restaurant> Lookup(List<Restaurant> restaurants, string sub)
         {
+            List<Restaurant> newList = new List<Restaurant>();
             foreach (var one in restaurants)
             {
-                if (one.Name.Contains(sub))
-                    Console.WriteLine(one.ID + " " + one.Name);
+                if (one.Name.ToLower().Contains(sub.ToLower()))
+                    newList.Add(one);
             }
+            return newList;
         }
     }
 }

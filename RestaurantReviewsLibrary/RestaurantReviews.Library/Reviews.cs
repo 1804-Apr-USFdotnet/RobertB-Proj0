@@ -14,7 +14,7 @@ namespace RestaurantReviews.Library
         public int RestaurantId { get; set; }
         public override string ToString()
         {
-            return $"Rating: {Rating}\n {Reviewer}: {Rating}\n";          
+            return $"\nRating: {Rating}\n {Reviewer}: {Comment}\n";          
         }
     }
 }

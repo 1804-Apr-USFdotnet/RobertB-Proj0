@@ -14,6 +14,7 @@ namespace RestaurantReviews.Client
             int x;
             bool execute = true;
             string restName;
+            MethodCalls.SetLibRest();
             while (execute)
             {
                 Console.WriteLine("Press the number corresponding to the option you want:");
@@ -42,11 +43,12 @@ namespace RestaurantReviews.Client
                             Console.WriteLine("1. Sort Alphabetically");
                             Console.WriteLine("2. Sort Reverse Alphabetically");
                             Console.WriteLine("3. Sort by size of restaurant name");
+                            Console.WriteLine("4. Sort by Average Rating Descending");
                             x = Convert.ToInt32(Console.ReadLine());
-                            while (x > 4 || x < 1)
+                            while (x > 5 || x < 1)
                             {
                                 Console.WriteLine("That is an invalid input. Please try again: ");
-                                x = Convert.ToInt32(Console.ReadKey());
+                                x = Convert.ToInt32(Console.ReadLine());
                             }
                             MethodCalls.chooseSort(x);
                             break;
@@ -56,10 +58,11 @@ namespace RestaurantReviews.Client
                             Console.WriteLine("Choose the method of selecting a restaurant");
                             Console.WriteLine("1. By Name");
                             Console.WriteLine("2. By ID");
+                            x = Convert.ToInt32(Console.ReadLine());
                             while (x > 2 || x < 1)
                             {
                                 Console.WriteLine("That is an invalid input. Please try again: ");
-                                x = Convert.ToInt32(Console.ReadKey());
+                                x = Convert.ToInt32(Console.ReadLine());
                             }
                             if (x == 1)
                             {
@@ -80,10 +83,11 @@ namespace RestaurantReviews.Client
                             Console.WriteLine("Choose the method of selecting a restaurant");
                             Console.WriteLine("1. By Name");
                             Console.WriteLine("2. By ID");
+                            x = Convert.ToInt32(Console.ReadLine());
                             while (x > 2 || x < 1)
                             {
                                 Console.WriteLine("That is an invalid input. Please try again: ");
-                                x = Convert.ToInt32(Console.ReadKey());
+                                x = Convert.ToInt32(Console.ReadLine());
                             }
                             if (x == 1)
                             {
@@ -95,7 +99,7 @@ namespace RestaurantReviews.Client
                             {
                                 Console.WriteLine("Enter the ID of the restaurant");
                                 x = Convert.ToInt32(Console.ReadLine());
-                                MethodCalls.getReviewsById(x);
+                                MethodCalls.MCReviewsById(x);
                             }
                             break;
                         }

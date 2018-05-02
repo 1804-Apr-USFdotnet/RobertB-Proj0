@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantReview.Data
+namespace ClassLibrary1
 {
-    class Class2
+    public class Class1
     {
     }
 }
